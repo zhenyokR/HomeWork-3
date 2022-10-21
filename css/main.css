@@ -1,0 +1,223 @@
+@font-face {
+  font-family: forBegining;
+  src: url(../fonts/CormorantInfant-Bold.ttf);
+}
+@font-face {
+  font-family: forSecond;
+  src: url(../fonts/Caveat-SemiBold.ttf);
+}
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+body {
+  padding: 15px;
+  background: linear-gradient(
+    135deg,
+    rgb(0, 0, 0),
+    rgb(255, 226, 113),
+    rgb(237, 242, 208)
+  );
+}
+.wrapper {
+  max-width: 2080px;
+  margin: 25px 25px 0 25px;
+  padding: 15px;
+  background-color: rgb(242, 238, 203);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.begining {
+  display: block;
+  font-family: forBegining, sans-serif;
+  text-align: justify;
+  text-indent: 2.5em;
+}
+.nav {
+  width: 27%;
+  margin: 0px 10px 10px 10px;
+  padding: 10px;
+  background-image: url(../img/око.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+  float: left;
+  border-color: none;
+  border-radius: 15px;
+}
+.link {
+  display: inline-block;
+  width: 100%;
+  padding: 0 10px;
+  font-family: forBegining, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.link:nth-child(odd) {
+  text-align: left;
+}
+.link:nth-child(even) {
+  text-align: right;
+}
+.link:hover {
+  font-size: 1.8em;
+  color: red;
+  background-color: rgba(247, 242, 242, 0.4);
+  margin: 5px;
+}
+.nav:hover {
+  background-image: url(../img/око2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  display: block;
+  text-align: center;
+  max-width: 2080px;
+  margin: 25px 25px 0 25px;
+  padding: 15px;
+  background-color: rgb(238, 223, 166);
+  border-radius: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 2080px;
+  margin: 25px;
+  padding: 15px;
+  background-color: rgb(242, 238, 203);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.text:nth-child(even) {
+  background-color: rgb(238, 223, 166);
+}
+.slide {
+  margin: 25px auto;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img1 {
+  background-image: url("../img/минас_тирит.jpg");
+}
+.img2 {
+  background-image: url("../img/минас_тирит2.jpg");
+}
+.img3 {
+  background-image: url("../img/минас_тирит3.jpg");
+}
+.img4 {
+  background-image: url("../img/выбор_арагорна.png");
+}
+.img5 {
+  background-image: url("../img/выбор_арагорна2.jpg");
+}
+.img6 {
+  background-image: url("../img/выбор_арагорна3.jpg");
+}
+.img7 {
+  background-image: url("../img/Рохан_собирает_войска.jpg");
+}
+
+.img8 {
+  background-image: url("../img/Рохан_собирает_войска2.png");
+}
+.img9 {
+  background-image: url("../img/Рохан_собирает_войска3.jpg");
+}
+.img10 {
+  background-image: url("../img/Осада_города.jpg");
+}
+.img11 {
+  background-image: url("../img/Осада_города2.jpg");
+}
+.img12 {
+  background-image: url("../img/Осада_города3.jpg");
+}
+.img13 {
+  background-image: url("../img/Поход_Теодена.jpg");
+}
+.img14 {
+  background-image: url("../img/Поход_Теодена2.jpg");
+}
+.img15 {
+  background-image: url("../img/Поход_Теодена3.jpg");
+}
+.image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  flex-basis: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.image:hover {
+  flex-basis: 100%;
+}
+p {
+  text-align: justify;
+  text-indent: 2.5em;
+}
+.dial {
+  font-family: forSecond, sans-serif;
+  font-size: 1.5em;
+}
+.top {
+  position: relative;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: forBegining, sans-serif;
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  transition: 1s;
+}
+.top:hover {
+  background-image: url(../img/botton.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: red;
+}
+@media (max-width: 740px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .nav {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .top:hover {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 320px) {
+  .slide {
+    flex-direction: column;
+  }
+  .top:hover {
+    font-size: 0.6em;
+  }
+}
