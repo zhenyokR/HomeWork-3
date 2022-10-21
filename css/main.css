@@ -15,7 +15,6 @@
   box-sizing: border-box;
 }
 body {
-  padding: 15px;
   background: linear-gradient(
     135deg,
     rgb(0, 0, 0),
